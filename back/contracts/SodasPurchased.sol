@@ -8,4 +8,8 @@ contract SodasPurchased {
     function returnSodasPurchased (_address) public return(uint256){
         return numberOfSodasPurchased(address _address);
     }
+
+    function purchaseSodas (_address, _number) public {
+        numberOfSodasPurcahsed[_address] += _number;
+    }
 }
