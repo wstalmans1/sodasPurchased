@@ -5,11 +5,11 @@ contract SodasPurchased {
     
     mapping (address => uint256) public numberOfSodasPurchased;
 
-    function returnSodasPurchased (_address) public return(uint256){
-        return numberOfSodasPurchased(address _address);
+    function returnSodasPurchased (address _address) public view returns(uint256){
+        return numberOfSodasPurchased[_address];
     }
 
-    function purchaseSodas (_address, _number) public {
-        numberOfSodasPurcahsed[_address] += _number;
+    function purchaseSodas (uint256 _number) public {
+        numberOfSodasPurchasedmsg.sender] += _number;
     }
 }
