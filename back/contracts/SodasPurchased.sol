@@ -10,6 +10,6 @@ contract SodasPurchased {
     }
 
     function purchaseSodas (uint256 _number) public {
-        numberOfSodasPurchasedmsg.sender] += _number;
+        numberOfSodasPurchased[msg.sender] += _number;
     }
 }
